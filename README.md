@@ -177,6 +177,21 @@ The following diagram shows a high-level view of a Prompt-Chaining:
   height = "600"
 />
 
+## Routing Pattern
+
+Routing in agents is a key AI design pattern where a central "router" agent classifies user input and delegates tasks to specialized sub-agents or tools, optimizing for accuracy, speed, and cost. It acts like a smart receptionist, directing queries to the best-suited agent (e.g., coding, RAG, or research) to improve performance in multi-agent workflows. 
+
+The following diagram shows a high-level view of a Routing Pattern:
+
+<img 
+  src="https://media.licdn.com/dms/image/v2/D4E12AQG8pqK-3gJmhg/article-cover_image-shrink_720_1280/B4EZqaBrk1KkAI-/0/1763520723567?e=2147483647&v=beta&t=XeSPGFAVBH09VZZ_XRWJxaTikOjKPMaBng0puajlKgU"
+  width="500"
+  height = "600"
+/>
+
+
+
+
 
 
 
