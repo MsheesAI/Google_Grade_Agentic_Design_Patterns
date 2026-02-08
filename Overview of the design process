@@ -1,0 +1,12 @@
+# Overview of the design process
+
+The following are the high-level steps to choose a design pattern for your agentic AI system. These steps are described in detail later in this document.
+
+1 . Define your requirements: Assess the characteristics of your workload, including task complexity, latency and performance expectations, cost budget, and the need for human involvement.
+2 . Review the common agent design patterns: Learn about the common design patterns in this guide, which include both single-agent systems and multi-agent systems.
+3 . Select a pattern: Select the appropriate design pattern based on your workload characteristics.
+
+This process isn't a one-time decision. You should periodically revisit these steps to refine your architecture as your workload characteristics change, your requirements evolve, or new Google Cloud features become available.
+
+
+
