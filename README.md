@@ -23,4 +23,5 @@ Building a multi-agent system requires additional evaluation, security, reliabil
 The multi-agent sequential pattern executes a series of specialized agents in a predefined, linear order where the output from one agent serves as the direct input for the next agent. This pattern uses a sequential workflow agent that operates on predefined logic without having to consult an AI model for the orchestration of its subagents.
 
 The following diagram shows a high-level view of a multi-agent sequential pattern:
-<img src =https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-sequential.svg>
+<img src="https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-sequential.svg" width="900"
+  height="500>
