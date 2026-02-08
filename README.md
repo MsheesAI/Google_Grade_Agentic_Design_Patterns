@@ -45,6 +45,22 @@ The following diagram shows a high-level view of a multi-agent parallel pattern:
   height = "900"
 />
 
+Use the parallel pattern when sub-tasks can be executed concurrently to reduce latency or gather diverse perspectives, such as gathering data from disparate sources or evaluating several options at once. For example, to analyze customer feedback, a parallel agent might fan out a single feedback entry to four specialized agents at the same time: a sentiment analysis agent, a keyword extraction agent, a categorization agent, and an urgency detection agent. A final agent gathers these four outputs into a single, comprehensive analysis of that feedback.
+
+The parallel pattern can reduce overall latency compared to a sequential approach because it can gather diverse information from multiple sources at the same time. However, this approach introduces trade-offs in cost and complexity. Running multiple agents in parallel can increase immediate resource utilization and token consumption, which leads to higher operational costs. Furthermore, the gather step requires complex logic to synthesize potentially conflicting results, which adds to the development and maintenance overhead of the system.
+
+The multi-agent loop agent pattern repeatedly executes a sequence of specialized subagents until a specific termination condition is met. This pattern uses a loop workflow agent that, like other workflow agents, operates on predefined logic without consulting an AI model for orchestration. After all of the subagents complete their tasks, the loop agent evaluates whether an exit condition is met. The condition can be a maximum number of iterations or a custom state. If the exit condition isn't met, then the loop agent starts the sequence of subagents again. You can implement a loop pattern where the exit condition is evaluated at any point in the flow. Use the loop pattern for tasks that require iterative refinement or self-correction, such as generating content and having a critic agent review it until it meets a quality standard.
+
+The following diagram shows a high-level view of a multi-agent loop pattern:
+
+<img 
+  src="https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-parallel.svg"
+  width="500"
+  height = "600"
+/>
+
+
+
 
 
 
