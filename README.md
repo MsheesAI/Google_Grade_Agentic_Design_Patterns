@@ -23,10 +23,28 @@ Building a multi-agent system requires additional evaluation, security, reliabil
 The multi-agent sequential pattern executes a series of specialized agents in a predefined, linear order where the output from one agent serves as the direct input for the next agent. This pattern uses a sequential workflow agent that operates on predefined logic without having to consult an AI model for the orchestration of its subagents.
 
 The following diagram shows a high-level view of a multi-agent sequential pattern:
+
 <img 
   src="https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-sequential.svg"
   width="900"
   height = "350"
 />
+
+Use the sequential pattern for highly structured, repeatable processes where the sequence of operations doesn't change. For example, a data processing pipeline might use this pattern to first have a data extraction agent pull raw data, then pass that data to a data cleaning agent for formatting, which in turn passes the clean data to a data loading agent to save it in a database.
+
+The sequential pattern can reduce latency and operational costs compared to a pattern that uses an AI model to orchestrate task workflow. However, this efficiency comes at the cost of flexibility. The rigid, predefined structure of the pipeline makes it difficult to adapt to dynamic conditions or to skip unnecessary steps, which can cause inefficient processing or lead to higher cumulative latency if an unneeded step is slow.
+
+## Parallel pattern
+The multi-agent parallel pattern, also known as a concurrent pattern, multiple specialized subagents perform a task or sub-tasks independently at the same time. The outputs of the subagents are then synthesized to produce the final consolidated response. Similar to a sequential pattern, the parallel pattern uses a parallel workflow agent to manage how and when the other agents run without having to consult an AI model to orchestrate its subagents.
+
+The following diagram shows a high-level view of a multi-agent parallel pattern:
+
+<img 
+  src="https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-sequential.svg"
+  width="600"
+  height = "900"
+/>
+
+
 
 
