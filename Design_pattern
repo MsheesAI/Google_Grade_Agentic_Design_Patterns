@@ -1,0 +1,12 @@
+Agent patterns : Agent patterns are reusable design templates that describe the structure and behavior of individual agents. 
+This includes reasoning agents, retrieval-augmented agents, coding agents, voice interfaces, workflow orchestrators, and collaborative multi-agent systems. 
+Each pattern illustrates how agents perceive, reason, act, and learn, mapped to AWS services.
+
+LLM workflows : Workflows focus on how agents use LLMs for reasoning. 
+They explore prompting strategies and planning mechanisms, and outline how LLMs are used not only to generate text but also to drive structured,interpretable, 
+and reliable behaviors within an agent loop.
+
+
+Agentic workflow patterns : Workflow patterns describe how multiple agents, tools, and environments interact to form autonomous systems. 
+This includes patterns for task orchestration, subagent delegation, event-based coordination, observability, and control. 
+These aspects promote scalable, composable, and auditable AI architectures.
