@@ -26,6 +26,7 @@ The following diagram shows a high-level view of a multi-agent sequential patter
 <img 
   src="https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-sequential.svg"
   width="900"
+  height = "350"
 />
 
 
