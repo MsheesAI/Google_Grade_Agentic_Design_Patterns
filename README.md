@@ -40,7 +40,7 @@ The multi-agent parallel pattern, also known as a concurrent pattern, multiple s
 The following diagram shows a high-level view of a multi-agent parallel pattern:
 
 <img 
-  src="https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-sequential.svg"
+  src="https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-parallel.svg"
   width="600"
   height = "900"
 />
