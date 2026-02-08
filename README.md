@@ -157,7 +157,25 @@ Use the human-in-the-loop pattern for tasks that require human oversight, subjec
 
 The human-in-the-loop pattern improves safety and reliability by inserting human judgment into critical decision points within the workflow. This pattern can add significant architectural complexity because it requires you to build and maintain the external system for user interaction.
 
+## Prompt Chaining
 
+To improve the reliability and performance of LLMs, one of the important prompt engineering techniques is to break tasks into its subtasks. Once those subtasks have been identified, the LLM is prompted with a subtask and then its response is used as input to another prompt. This is what's referred to as prompt chaining, where a task is split into subtasks with the idea to create a chain of prompt operations.
+
+Prompt chaining is useful to accomplish complex tasks which an LLM might struggle to address if prompted with a very detailed prompt. In prompt chaining, chain prompts perform transformations or additional processes on the generated responses before reaching a final desired state.
+
+Besides achieving better performance, prompt chaining helps to boost the transparency of your LLM application, increases controllability, and reliability. This means that you can debug problems with model responses much more easily and analyze and improve performance in the different stages that need improvement.
+
+Prompt chaining is particularly useful when building LLM-powered conversational assistants and improving the personalization and user experience of your applications.
+
+
+The following diagram shows a high-level view of a Prompt-Chaining:
+
+
+<img 
+  src="https://docs.aws.amazon.com/images/prescriptive-guidance/latest/agentic-ai-patterns/images/workflow-patterns-llm-prompt-chaining.png"
+  width="500"
+  height = "600"
+/>
 
 
 
