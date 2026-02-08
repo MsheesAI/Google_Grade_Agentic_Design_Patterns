@@ -60,6 +60,26 @@ The following diagram shows a high-level view of a multi-agent loop pattern:
   height = "600"
 />
 
+The loop agent pattern provides a way to build complex, iterative workflows. It enables agents to refine their own work and continue processing until a specific quality or state is achieved. However, this pattern's primary trade-off is the risk of an infinite loop. If the termination condition isn't correctly defined or if the subagents fail to produce the state that's required to stop, the loop can run indefinitely. This can lead to excessive operational costs, high resource consumption, and potential system hangs.
+
+## Review and critique pattern
+
+The multi-agent review and critique pattern, also known as the generator and critic pattern, improves the quality and reliability of generated content by using two specialized agents, typically in a sequential workflow. The review and critique pattern is an implementation of the loop agent pattern.
+
+In the review and critique pattern, a generator agent creates an initial output, such as a block of code or a summary of a document. Next, a critic agent evaluates this output against a predefined set of criteria, such as factual accuracy, adherence to formatting rules, or safety guidelines. Based on the evaluation, the critic can approve the content, reject it, or return it to the generator with feedback for revision.
+
+The following diagram shows a high-level view of a multi-agent review and critique pattern:
+
+<img 
+  src="https://docs.cloud.google.com/static/architecture/images/choose-design-pattern-agentic-ai-system-review-critique.svg"
+  width="500"
+  height = "600"
+/>
+
+
+
+
+
 
 
 
